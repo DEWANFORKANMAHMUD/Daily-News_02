@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Portal - Home</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/script.js">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- 1. Header Top Section -->
+  <div class="bg-dark text-white py-2 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="small">
+        <i class="fas fa-envelope me-2"></i>info@newsportal.com |
+        <i class="fas fa-phone ms-2 me-2"></i>+880 1680019139 |
+        <span id="datetime" class="ms-3 text-warning fw-bold"></span>
+      </div>
+      <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Navigation Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-fw-bold text-white me-4 fs-3" href="index.html"><i class="fas fa-newspaper"></i> NEWS<span
+          class="text-warning">PORTAL</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./category.html" id="catDropdown" role="button"
+              data-bs-toggle="dropdown">Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./category.html">National</a></li>
+              <li><a class="dropdown-item" href="./category.html">Politics</a></li>
+              <li><a class="dropdown-item" href="./category.html">Sports</a></li>
+              <li><a class="dropdown-item" href="./category.html">Education</a></li>
+              <li><a class="dropdown-item" href="./category.html">Entertainment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./author.html">Author</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+        <a href="./loging.html" class="btn btn-warning btn-sm fw-bold"><i class="fas fa-user-lock me-1"></i> Reporter
+          Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3. Breaking News Ticker Section -->
+  <div class="container-fluid bg-danger text-white py-2">
+    <div class="container d-flex align-items-center">
+      <span class="badge bg-dark me-3 px-3 py-2 text-uppercase">Breaking News</span>
+      <div class="ticker-wrapper flex-grow-1 overflow-hidden">
+        <div id="newsTicker" class="d-flex text-white fw-semibold">
+          <span class="ticker-item me-5">🔴 Gov launches new digital education initiative across nation.</span>
+          <span class="ticker-item me-5">🔴 National Cricket Team qualifies for World Cup semi-finals!</span>
+          <span class="ticker-item me-5">🔴 Economic summit concludes with major infrastructure plans.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="container my-4">
+
+    <!-- 4. Lead News & Selected News Section -->
+    <div class="row g-4 mb-5">
+      <!-- Left Part: Lead News -->
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="https://picsum.photos/800/450?random=1" class="card-img-top" alt="Lead News">
+          <div class="card-body">
+            <span class="badge bg-primary mb-2">National</span>
+            <h2 class="card-title fw-bold">Major Breakthrough in Clean Energy Development Announced Today</h2>
+            <p class="card-text text-muted">Researchers have unveiled a groundbreaking renewable technology that
+              promises to reduce carbon emissions significantly over the next decade...</p>
+            <a href="#" class="btn btn-primary">Read Full Story</a>
+          </div>
+        </div>
+      </div>
+      <!-- Right Part: Selected Four News -->
+      <div class="col-lg-4">
+        <h4 class="border-bottom pb-2 fw-bold text-uppercase">Top Stories</h4>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex gap-3 align-items-center border-bottom pb-2">
+            <img src="https://picsum.photos/100/70?random=2" class="rounded" alt="News">
+            <div>
+              <h6 class="mb-1 fw-bold"><a href="#" class="text-dark text-decoration-none">Stock Market hits record high
+                  following quarterly reports</a></h6>
+              <small class="text-muted">10 mins ago</small>
+            </div>
+          </div>
+          <div class="d-flex gap-3 align-items-center border-bottom pb-2">
+            <img src="https://picsum.photos/100/70?random=3" class="rounded" alt="News">
+            <div>
+              <h6 class="mb-1 fw-bold"><a href="#" class="text-dark text-decoration-none">New public transit lines open
+                  across major cities</a></h6>
+              <small class="text-muted">30 mins ago</small>
+            </div>
+          </div>
+          <div class="d-flex gap-3 align-items-center border-bottom pb-2">
+            <img src="https://picsum.photos/100/70?random=4" class="rounded" alt="News">
+            <div>
+              <h6 class="mb-1 fw-bold"><a href="#" class="text-dark text-decoration-none">Tech summit discusses AI
+                  governance standards</a></h6>
+              <small class="text-muted">1 hour ago</small>
+            </div>
+          </div>
+          <div class="d-flex gap-3 align-items-center">
+            <img src="https://picsum.photos/100/70?random=5" class="rounded" alt="News">
+            <div>
+              <h6 class="mb-1 fw-bold"><a href="#" class="text-dark text-decoration-none">Global sports event kicks off
+                  with opening ceremony</a></h6>
+              <small class="text-muted">2 hours ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Latest News Section -->
+    <section class="mb-5">
+      <h3 class="border-start border-4 border-primary ps-3 fw-bold mb-4">Latest News</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=10" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Technology</span>
+              <h5 class="card-title fw-bold">New Smartphone Innovations Unveiled</h5>
+              <p class="card-text text-muted">Discover the latest advancements in mobile technology this year.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=11" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Health</span>
+              <h5 class="card-title fw-bold">Daily Exercise Boosts Mental Health</h5>
+              <p class="card-text text-muted">Study shows 30 minutes of daily walking improves overall well-being.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=12" class="card-img-top" alt="Latest">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Sports</span>
+              <h5 class="card-title fw-bold">Championship Finals Set for Sunday</h5>
+              <p class="card-text text-muted">Teams prepare for an intense showdown in the final tournament.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. National News Section -->
+    <section class="mb-5">
+      <h3 class="border-start border-4 border-success ps-3 fw-bold mb-4">National News</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=20" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Infrastructure Project Approval</h5>
+              <p class="card-text text-muted">Government approves funding for major highway expansions nationwide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=21" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Agricultural Reforms Introduced</h5>
+              <p class="card-text text-muted">New policy aims to assist farmers with modern equipment and grants.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=22" class="card-img-top" alt="National">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Urban Green Space Expansion</h5>
+              <p class="card-text text-muted">Cities add new parks and green spaces to combat urban heat islands.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Education News Section -->
+    <section class="mb-5">
+      <h3 class="border-start border-4 border-warning ps-3 fw-bold mb-4">Education News</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=30" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Digital Curriculum Launched</h5>
+              <p class="card-text text-muted">Schools adopt interactive digital learning tools nationwide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=31" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Scholarship Program Announced</h5>
+              <p class="card-text text-muted">Over 10,000 university scholarships awarded to deserving students.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://picsum.photos/400/250?random=32" class="card-img-top" alt="Education">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">STEM Education Workshop</h5>
+              <p class="card-text text-muted">Annual STEM fair inspires thousands of young innovators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 8. Big Footer Section -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4 class="fw-bold text-white"><i class="fas fa-newspaper text-primary"></i> NEWS<span
+              class="text-warning">PORTAL</span></h4>
+          <p class="text-muted">Your trusted source for accurate, timely, and comprehensive news coverage locally and
+            globally.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-white border-bottom pb-2">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+            <li><a href="category.html" class="text-muted text-decoration-none">Categories</a></li>
+            <li><a href="author.html" class="text-muted text-decoration-none">Our Reporters</a></li>
+            <li><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-white border-bottom pb-2">Contact Info</h5>
+          <p class="text-muted mb-1"><i class="fas fa-map-marker-alt me-2"></i> 14/A, Estern Block, CUFL-4000,chattogram, Bangladesh</p>
+          <p class="text-muted mb-1"><i class="fas fa-phone me-2"></i> +880 1680019139</p>
+          <p class="text-muted"><i class="fas fa-envelope me-2"></i> contact@newsportal.com</p>
+        </div>
+      </div>
+
+      <!-- 9. Footer Bottom -->
+      <hr class="border-secondary my-4">
+      <div class="text-center text-muted small">
+        &copy; 2026 News Portal. All Rights Reserved. Designed for NSDA Assessment Level 3.
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery & Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="./assets/css/script.js"></script>
+</body>
+
+</html>
